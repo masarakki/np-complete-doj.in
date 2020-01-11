@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: np-complete-doj.in website
+Resources:
+  S3:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+  Cloudfront:
+    Type: AWS::CouldFront::Distribution
+    Properties:
+      DistributionConfig:
+        DefaultRootObject: index.html
+        Enabled: false
+        HttpVersion: http2
+        IPV6Enabeld: true
+        Origins:
+          - Id: s3-bucket
+            DomainName: !GetAtt S3.RegionalDoainName
+            S3OriginConfig:
