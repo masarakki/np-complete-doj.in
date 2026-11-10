@@ -6,7 +6,8 @@
     ":combinePatchMinorReleases",
     ":prImmediately",
     ":label(dependencies)",
-    ":assignAndReview(masarakki)"
+    ":assignAndReview(masarakki)",
+    "customManagers:biomeVersions"
   ],
   "rangeStrategy": "pin",
   "timezone": "Asia/Tokyo",
