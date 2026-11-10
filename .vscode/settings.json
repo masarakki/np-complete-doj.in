@@ -6,7 +6,7 @@
   },
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
-  "eslint.packageManager": "yarn",
+  "eslint.packageManager": "npm",
   "files.eol": "\n",
   "files.exclude": {
     "node_modules": true,
