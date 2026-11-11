@@ -35,8 +35,7 @@
       "**",
       "!**/dist",
       "!**/node_modules",
-      "!**/.yarn",
-      "!**/yarn.lock",
+      "!**/package-lock.json",
       "!**/package.json"
     ]
   }
